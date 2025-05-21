@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Cà Phê Nghệ Thuật</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-color: #f8f5f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #3e2723;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8em;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    header::after {
+      content: '☕';
+      position: absolute;
+      right: 30px;
+      top: 25px;
+      font-size: 1.5em;
+    }
+
+    .menu-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .floral {
+      position: absolute;
+      width: 100px;
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+    .floral.top-left {
+      top: -40px;
+      left: -40px;
+    }
+    .floral.bottom-right {
+      bottom: -60px;
+      right: -60px;
+    }
+
+    .category {
+      margin-bottom: 50px;
+    }
+
+    .category h2 {
+      font-family: 'Playfair Display', serif;
+      color: #5d4037;
+      border-bottom: 2px dashed #bcaaa4;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      gap: 10px;
+    }
+
+    .item {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .item h3 {
+      margin-top: 0;
+      font-size: 0.75em;
+      color: #4e342e;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #a1887f;
+      margin-top: 4px;
+      font-size: 0.75em;
+    }
+
+    .desc {
+      font-size: 0.7em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>Xờm Con Coffee</header>
+
+<div class="menu-container">
+  <img src="https://www.transparenttextures.com/patterns/arabesque.png" class="floral top-left" />
+  <img src="https://www.transparenttextures.com/patterns/arabesque.png" class="floral bottom-right" />
+
+  <div class="category">
+    <h2>Nước Uống Đặc Biệt</h2>
+    <div class="items">
+      <!-- 40 loại nước uống -->
+      <!-- Dưới đây là ví dụ, có thể thay đổi nội dung tùy ý -->
+      <div class="item"><h3>Cà Phê Đen</h3><p class="desc">Nguyên chất, đậm vị</p><p class="price">25.000đ</p></div>
+      <div class="item"><h3>Cà Phê Sữa</h3><p class="desc">Sữa đặc và cà phê hòa quyện</p><p class="price">28.000đ</p></div>
+      <div class="item"><h3>Bạc Xỉu</h3><p class="desc">Ít cà phê, nhiều sữa</p><p class="price">30.000đ</p></div>
+      <div class="item"><h3>Cà Phê Trứng</h3><p class="desc">Kem trứng thơm béo</p><p class="price">35.000đ</p></div>
+      <div class="item"><h3>Cà Phê Muối</h3><p class="desc">Hơi mặn, rất quyến rũ</p><p class="price">32.000đ</p></div>
+      <div class="item"><h3>Cà Phê Cốt Dừa</h3><p class="desc">Béo ngậy, mùi thơm nhẹ</p><p class="price">38.000đ</p></div>
+      <div class="item"><h3>Cà Phê Cam</h3><p class="desc">Vị cam chua nhẹ, tươi mới</p><p class="price">34.000đ</p></div>
+      <div class="item"><h3>Cà Phê Matcha</h3><p class="desc">Hòa quyện giữa Nhật Bản & Việt Nam</p><p class="price">40.000đ</p></div>
+      <div class="item"><h3>Cà Phê Hạt Dẻ</h3><p class="desc">Vị ngọt bùi tự nhiên</p><p class="price">36.000đ</p></div>
+      <div class="item"><h3>Cà Phê Kem Tươi</h3><p class="desc">Thơm béo, mịn mượt</p><p class="price">39.000đ</p></div>
+      <div class="item"><h3>Espresso</h3><p class="desc">Vị Ý truyền thống</p><p class="price">30.000đ</p></div>
+      <div class="item"><h3>Latte</h3><p class="desc">Sữa nóng quyện cà phê</p><p class="price">35.000đ</p></div>
+      <div class="item"><h3>Cappuccino</h3><p class="desc">Bọt sữa mịn màng</p><p class="price">35.000đ</p></div>
+      <div class="item"><h3>Mocha</h3><p class="desc">Cà phê và socola</p><p class="price">38.000đ</p></div>
+      <div class="item"><h3>Americano</h3><p class="desc">Loãng hơn Espresso</p><p class="price">30.000đ</p></div>
+      <div class="item"><h3>Cold Brew</h3><p class="desc">Ủ lạnh nhiều giờ</p><p class="price">40.000đ</p></div>
+      <div class="item"><h3>Trà Sữa Truyền Thống</h3><p class="desc">Trà đậm, sữa béo</p><p class="price">30.000đ</p></div>
+      <div class="item"><h3>Trà Sữa Trân Châu</h3><p class="desc">Kèm trân châu đen</p><p class="price">32.000đ</p></div>
+      <div class="item"><h3>Trà Đào</h3><p class="desc">Thơm vị đào tự nhiên</p><p class="price">30.000đ</p></div>
+      <div class="item"><h3>Trà Chanh Sả</h3><p class="desc">Thơm mát</p><p class="price">28.000đ</p></div>
+      <div class="item"><h3>Trà Táo Bạc Hà</h3><p class="desc">Mát lạnh & thơm</p><p class="price">32.000đ</p></div>
+      <div class="item"><h3>Trà Vải</h3><p class="desc">Ngọt ngào & thanh mát</p><p class="price">30.000đ</p></div>
+      <div class="item"><h3>Nước Ép Cam</h3><p class="desc">Tươi mới mỗi ngày</p><p class="price">28.000đ</p></div>
+      <div class="item"><h3>Nước Ép Dưa Hấu</h3><p class="desc">Giải nhiệt tự nhiên</p><p class="price">27.000đ</p></div>
+      <div class="item"><h3>Soda Việt Quất</h3><p class="desc">Chua nhẹ, sủi bọt</p><p class="price">29.000đ</p></div>
+      <div class="item"><h3>Soda Cam</h3><p class="desc">Tươi mát, bọt nhẹ</p><p class="price">29.000đ</p></div>
+      <div class="item"><h3>Yaourt Đá</h3><p class="desc">Chua dịu mát lạnh</p><p class="price">26.000đ</p></div>
+      <div class="item"><h3>Sinh Tố Bơ</h3><p class="desc">Sánh mịn, béo ngậy</p><p class="price">35.000đ</p></div>
+      <div class="item"><h3>Sinh Tố Dâu</h3><p class="desc">Ngọt thơm tự nhiên</p><p class="price">35.000đ</p></div>
+      <div class="item"><h3>Matcha Latte</h3><p class="desc">Hương matcha mịn</p><p class="price">38.000đ</p></div>
+      <div class="item"><h3>Trà Gạo Rang</h3><p class="desc">Thơm nhẹ gạo lứt</p><p class="price">28.000đ</p></div>
+      <div class="item"><h3>Hồng Trà Sữa Kem Cheese</h3><p class="desc">Kem mặn béo ngậy</p><p class="price">36.000đ</p></div>
+      <div class="item"><h3>Trà Đen Macchiato</h3><p class="desc">Lớp kem béo ngậy</p><p class="price">34.000đ</p></div>
+      <div class="item"><h3>Trà Sữa Ô Long</h3><p class="desc">Thơm đặc trưng</p><p class="price">32.000đ</p></div>
+      <div class="item"><h3>Trà Gừng</h3><p class="desc">Ấm nóng, chống lạnh</p><p class="price">30.000đ</p></div>
+      <div class="item"><h3>Trà Tắc Xí Muội</h3><p class="desc">Chua chua ngọt ngọt</p><p class="price">28.000đ</p></div>
+      <div class="item"><h3>Cacao Nóng</h3><p class="desc">Đậm vị ca cao</p><p class="price">32.000đ</p></div>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Món Ăn Vặt</h2>
+    <div class="items">
+      <div class="item"><h3>Khoai Tây Chiên</h3><p class="desc">Giòn rụm, ăn kèm tương</p><p class="price">25.000đ</p></div>
+      <div class="item"><h3>Xúc Xích Nướng</h3><p class="desc">Thơm ngon, đậm vị</p><p class="price">28.000đ</p></div>
+      <div class="item"><h3>Phô Mai Que</h3><p class="desc">Kéo sợi hấp dẫn</p><p class="price">30.000đ</p></div>
+      <div class="item"><h3>Bánh Tráng Trộn</h3><p class="desc">Chua cay đủ vị</p><p class="price">25.000đ</p></div>
+      <div class="item"><h3>Chân Gà Sả Tắc</h3><p class="desc">Giòn ngon, chua cay</p><p class="price">35.000đ</p></div>
+      <div class="item"><h3>Gỏi Cuốn</h3><p class="desc">Tươi mát, đầy đủ dinh dưỡng</p><p class="price">30.000đ</p></div>
+      <div class="item"><h3>Bánh Bao Chiên</h3><p class="desc">Vỏ giòn, nhân mặn</p><p class="price">28.000đ</p></div>
+      <div class="item"><h3>Cá Viên Chiên</h3><p class="desc">Ăn vặt cực ngon</p><p class="price">25.000đ</p></div>
+      <div class="item"><h3>Nem Chua Rán</h3><p class="desc">Chua cay, nóng giòn</p><p class="price">30.000đ</p></div>
+      <div class="item"><h3>Pizza Mini</h3><p class="desc">Đầy đặn topping</p><p class="price">40.000đ</p></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
